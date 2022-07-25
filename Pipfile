@@ -5,10 +5,10 @@ name = "pypi"
 
 [packages]
 django = "*"
-pillow = "*"
 tzdata = "*"
 black = "*"
 django-countries = "*"
+pillow = "*"
 
 [dev-packages]
 flake8 = "*"

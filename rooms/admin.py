@@ -17,6 +17,11 @@ class HouseRuleAdmin(admin.ModelAdmin):
     pass
 
 
+@admin.register(models.Facility)
+class FacilityAdmin(admin.ModelAdmin):
+    pass
+
+
 # Register your models here.
 @admin.register(models.Room)
 class RoomAdmin(admin.ModelAdmin):
