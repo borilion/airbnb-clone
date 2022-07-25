@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 django = "*"
 pillow = "*"
+tzdata = "*"
+black = "*"
+django-countries = "*"
 
 [dev-packages]
 flake8 = "*"
