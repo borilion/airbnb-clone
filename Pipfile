@@ -9,6 +9,8 @@ tzdata = "*"
 black = "*"
 django-countries = "*"
 pillow = "*"
+django-seed = "*"
+psycopg2 = "*"
 
 [dev-packages]
 flake8 = "*"
