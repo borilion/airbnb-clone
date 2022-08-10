@@ -6,15 +6,14 @@ from users import models as user_models
 
 
 class Command(BaseCommand):
-    def handle(self, *args, **options):
-        help = "This command create many rooms."
-
     def add_arguments(self, parser):
         parser.add_argument(
             "--number", default=2, type=int, help="How many rooms do you want to create"
         )
 
     def handle(self, *args, **options):
+        help = "This command create many rooms."
+
         number = options.get("number", 1)
         seeder = Seed.seeder()
         all_users = user_models.User.objects.all()
