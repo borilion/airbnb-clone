@@ -96,7 +96,6 @@ class Room(core_models.TimeStampedModel):
     room_type = models.ForeignKey(
         "RoomType",
         related_name="rooms",
-        blank=True,
         on_delete=models.SET_NULL,
         null=True,
     )
