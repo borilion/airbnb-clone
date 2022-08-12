@@ -24,7 +24,7 @@ class Review(core_models.TimeStampedModel):
         decimal_places=1,
         validators=[MaxValueValidator(5.0), MinValueValidator(0.1)],
     )
-    localtion = models.DecimalField(
+    location = models.DecimalField(
         max_digits=2,
         decimal_places=1,
         validators=[MaxValueValidator(5.0), MinValueValidator(0.1)],
@@ -59,7 +59,7 @@ class Review(core_models.TimeStampedModel):
             self.accuracy
             + self.communication
             + self.cleanliness
-            + self.localtion
+            + self.location
             + self.check_in
             + self.value
         ) / 6
